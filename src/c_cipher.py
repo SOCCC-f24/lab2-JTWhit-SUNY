@@ -41,7 +41,7 @@ def encrypt(email="abc012"):
     #     A = email[:3] (check first half)
     #     B = email[3:] (check second half)
     #     enum_flag = A or B
-    anum_flag = email[:3].isalpha() != email[:3].isalpha() or email[3:].isdecimal() != email[3:].isdecimal()
+    anum_flag = email[:3].isalpha() != True or email[3:].isdecimal() != True
 
     if len_flag:                         # NOTE: here we provide input validation on length
         output = "Length check failed\n"
@@ -116,7 +116,7 @@ def decrypt(dmail="def345"):
     #     A = email[:3] (check first half)
     #     B = email[3:] (check second half)
     #     enum_flag = A or B
-    anum_flag = dmail[:3].isalpha() != dmail[:3].isalpha() or dmail[3:].isdecimal() != dmail[3:].isdecimal()
+    anum_flag = dmail[:3].isalpha() != True or dmail[3:].isdecimal() != True
 
     if len_flag:                         # NOTE: here we provide input validation on length
         output = "Length check failed\n"
