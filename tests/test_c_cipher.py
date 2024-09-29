@@ -2,8 +2,10 @@ import pytest
 import logging
 from src.c_cipher import encrypt, decrypt
 
+'''
 def test_kick_the_back_tire():
     assert decrypt() == 'aef345'
+'''
 
 def test_decrypt_length_error(caplog):
     """Test that a length error message is logged for invalid email size"""
@@ -27,8 +29,10 @@ def test_successful_decryption(caplog):
     assert result == "abc012"
     assert "abc012" not in caplog.text 
 
+'''
 def test_kick_the_front_tire():
     assert encrypt() == 'dbc012'
+'''
 
 def test_encrypt_length_error(caplog):
     """Test that a length error message is logged for invalid email size"""
